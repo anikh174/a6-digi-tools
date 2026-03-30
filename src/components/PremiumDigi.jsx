@@ -1,6 +1,8 @@
 import React from "react";
+import Cart from "./Cart";
 
-const PremiumDigi = () => {
+const PremiumDigi = ({activeTab, setActiveTab}) => {
+  console.log(activeTab)
   return (
     <div className="mt-28 ">
       <div className="text-center space-y-5">
@@ -9,22 +11,23 @@ const PremiumDigi = () => {
           Choose from our curated collection of premium digital products
           designed <br /> to boost your productivity and creativity.
         </p>
-
-        <div className="tabs tabs-box justify-center bg-transparent">
-          <input
-            type="radio"
-            name="my_tabs_1"
-            className="tab"
-            aria-label="Products"
-            defaultChecked
-          />
-          <input
-            type="radio"
-            name="my_tabs_1"
-            className="tab"
-            aria-label="Cart"
-          />
-        </div>
+              <div className="tabs tabs-box justify-center bg-transparent">
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className="tab w-40 rounded-full font-bold text-lg"
+          aria-label="Products"
+          defaultChecked
+          onClick={()=>setActiveTab("Products")}
+        />
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className="tab w-40 rounded-full font-bold text-lg"
+          aria-label="Cart"
+          onClick={()=>setActiveTab("Cart")}
+        />
+      </div>
       </div>
     </div>
   );
