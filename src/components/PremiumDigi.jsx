@@ -1,7 +1,7 @@
 import React from "react";
 import Cart from "./Cart";
 
-const PremiumDigi = ({activeTab, setActiveTab}) => {
+const PremiumDigi = ({activeTab, setActiveTab, carts}) => {
   console.log(activeTab)
   return (
     <div className="mt-28 ">
@@ -24,7 +24,7 @@ const PremiumDigi = ({activeTab, setActiveTab}) => {
           type="radio"
           name="my_tabs_1"
           className="tab w-40 rounded-full font-bold text-lg"
-          aria-label="Cart"
+          aria-label={`Carts (${carts.length})`}
           onClick={()=>setActiveTab("Cart")}
         />
       </div>

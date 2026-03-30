@@ -13,19 +13,20 @@ const getProducts = async () => {
 };
 
 const productsPromise = getProducts();
-console.log(productsPromise);
 
 function App() {
   const [activeTab, setActiveTab] = useState("Products");
+  const [carts, setCarts] = useState([]);
+  console.log(carts)
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar carts={carts}></Navbar>
       <Hero></Hero>
       <UserPremiumRating></UserPremiumRating>
-      <PremiumDigi activeTab={activeTab} setActiveTab={setActiveTab}></PremiumDigi>
-      {activeTab === "Products" && <Products productsPromise={productsPromise}></Products>}
-      {activeTab === "Cart" && <Cart></Cart>}
+      <PremiumDigi activeTab={activeTab} setActiveTab={setActiveTab} carts={carts}></PremiumDigi>
+      {activeTab === "Products" && <Products productsPromise={productsPromise} carts={carts} setCarts={setCarts}></Products>}
+      {activeTab === "Cart" && <Cart carts={carts} setCarts={setCarts}></Cart>}
     </>
   );
 }

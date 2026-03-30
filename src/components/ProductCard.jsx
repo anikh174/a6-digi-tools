@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { TiTickOutline } from "react-icons/ti";
 
-const ProductCard = ({product}) => {
+const ProductCard = ({product, carts, setCarts}) => {
    const [isAddToCart, setIsAddToCart] = useState(false);
    const handleBuyNow =()=>{
-        setIsAddToCart(true)
+        setIsAddToCart(true);
+        setCarts([...carts, product]);
    }
   return (
     <div>
