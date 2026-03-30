@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "ResumePro Builder",
+    "description": "Create professional resumes in minutes with AI assistance.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+  },
+  {
+    "id": 2,
+    "name": "PortfolioKit",
+    "description": "Build and launch your developer portfolio without coding.",
+    "price": 19.0,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Drag & drop builder",
+      "Custom domains",
+      "SEO optimized"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+  },
+  {
+    "id": 3,
+    "name": "TaskFlow Manager",
+    "description": "Organize tasks, projects, and deadlines in one place.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Kanban boards",
+      "Team collaboration",
+      "Deadline reminders"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/906/906334.png"
+  },
+  {
+    "id": 4,
+    "name": "InvoiceGen Pro",
+    "description": "Generate and send professional invoices instantly.",
+    "price": 29.0,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Custom branding",
+      "Recurring invoices",
+      "Payment tracking"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/3135/3135706.png"
+  },
+  {
+    "id": 5,
+    "name": "SocialBoost Scheduler",
+    "description": "Schedule and automate posts across all social platforms.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Multi-platform posting",
+      "Analytics dashboard",
+      "Auto hashtag generator"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/733/733547.png"
+  },
+  {
+    "id": 6,
+    "name": "DesignSpark UI Kit",
+    "description": "A complete UI component library for modern web apps.",
+    "price": 49.0,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "200+ UI components",
+      "Figma & React support",
+      "Dark/light themes"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+  }
+]
