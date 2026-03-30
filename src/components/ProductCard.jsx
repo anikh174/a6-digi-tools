@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import { TiTickOutline } from "react-icons/ti";
+import { toast } from "react-toastify";
 
 const ProductCard = ({product, carts, setCarts}) => {
    const [isAddToCart, setIsAddToCart] = useState(false);
    const handleBuyNow =()=>{
         setIsAddToCart(true);
+
+        const isFound = carts.find(item => item.id === product.id);
+        if(isFound){
+          toast.error("Item already in cart");
+          return;
+        }
         setCarts([...carts, product]);
+        toast.success("Item added to cart");
    }
   return (
     <div>

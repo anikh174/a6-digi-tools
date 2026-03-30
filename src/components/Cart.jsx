@@ -1,15 +1,18 @@
 import React from "react";
 import { TbFaceIdError } from "react-icons/tb";
+import { toast } from "react-toastify";
 
 const Cart = ({ carts, setCarts }) => {
   const totalPrice = carts.reduce((sum, item) => sum + item.price, 0);
   const handlePayment = () => {
     setCarts([]);
+    toast.success("Products proceed to successfully");
   };
 
   const handleDelete = (item) => {
         const filtered = carts.filter(filteredCard =>filteredCard.id !== item.id)
         setCarts(filtered);
+        toast.error("Item removed to cart");
     };
   return (
     <div className="max-w-[1200px] mx-auto my-20">
