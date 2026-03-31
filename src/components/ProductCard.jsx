@@ -17,11 +17,17 @@ const ProductCard = ({product, carts, setCarts}) => {
    }
   return (
     <div>
-      <div className="border shadow-lg rounded-lg p-5">
-        <div>
-          <p className="text-right">{product.tag}</p>
+      <div className="border border-[#F2F2F2] shadow-lg rounded-lg p-5 duration-300 hover:shadow-xl hover:scale-110">
+        <div className="flex justify-end">
+          <p className={`border px-3 py-1 rounded-full
+            ${product.tagType === "new" && "text-[#0A883E] bg-green-100 text-sm font-medium items-center"}
+            ${product.tagType === "best" && "text-[#BB4D00] bg-[#FEF3C6] text-sm font-medium items-center"}
+            ${product.tagType === "popular" && "text-[#4F39F6] bg-[#E1E7FF] text-sm font-medium items-center"}
+
+            
+            `}>{product.tag}</p>
         </div>
-        <div className=" border border-gray-300 rounded-full h-16 w-16 p-4 mb-4">
+        <div className=" border border-gray-300 rounded-full h-14 w-14 p-3 mb-4">
           <img className="h-8 w-8" src={product.icon} alt="" />
         </div>
 
@@ -48,12 +54,9 @@ const ProductCard = ({product, carts, setCarts}) => {
           </ul>
         </div>
 
-        <button
-          onClick={handleBuyNow}
-          className="btn w-full bg-linear-to-l from-[#9514FA] to-[#4F39F6] py-6 text-center text-white font-bold rounded-full"
-        >
-          {isAddToCart ? "Added To Cart" : "Buy Now"}
-        </button>
+        <div onClick={handleBuyNow}>
+          {isAddToCart ? <button className="btn w-full bg-linear-to-l bg-success py-6 text-center text-white font-bold rounded-full">Added To Cart</button> : <button className="btn w-full bg-linear-to-l from-[#9514FA] to-[#4F39F6]  py-6 text-center text-white font-bold rounded-full">Buy Now</button>}
+        </div>
       </div>
     </div>
   );

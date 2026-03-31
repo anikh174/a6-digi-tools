@@ -15,17 +15,17 @@ const Cart = ({ carts, setCarts }) => {
         toast.error("Item removed to cart");
     };
   return (
-    <div className="max-w-[1200px] mx-auto my-20">
-      <div className="border-2 border-[#F2F2F2] p-10 rounded-lg">
+    <div className="max-w-7xl mx-auto my-5 px-8 lg:my-20">
+      <div className="border-2 border-[#F2F2F2] p-5 lg:p-10 rounded-lg">
         <h3 className="font-bold text-2xl mb-5">Your Cart</h3>
 
         {carts.length === 0 ? (
-          <div className="space-y-3 text-center">
+          <div className="space-y-3 text-center bg-zinc-50 p-3 lg:p-14 rounded-lg">
             <div className="flex gap-2 items-center justify-center">
                 <TbFaceIdError className="text-8xl"/>
                 <p className="text-3xl font-bold">Cart is empty!!</p>
             </div>
-            <p>Please, Added some products then you will be proceed</p>
+            <p className="text-sm lg:text-xl text-[#627382]">Please, Added some products then you will be proceed</p>
           </div>
         ) : (
           <div>
