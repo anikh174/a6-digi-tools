@@ -8,6 +8,8 @@ import Products from "./components/Products";
 import UserPremiumRating from "./components/UserPremiumRating";
 import GetStart from "./components/GetStart";
 import TransparentPricing from "./components/TransparentPricing";
+import YourWorkflow from "./components/YourWorkflow";
+import Footer from "./components/Footer";
 
 const getProducts = async () => {
   const res = await fetch("/data.json");
@@ -31,6 +33,8 @@ function App() {
       {activeTab === "Cart" && <Cart carts={carts} setCarts={setCarts}></Cart>}
       <GetStart></GetStart>
       <TransparentPricing></TransparentPricing>
+      <YourWorkflow></YourWorkflow>
+      <Footer></Footer>
     </>
   );
 }
