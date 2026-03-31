@@ -39,13 +39,13 @@ const Footer = () => {
           <div className="space-y-1 lg:space-y-5">
             <p className="font-bold text-sm lg:text-xl">Social Links</p>
             <div className="flex gap-5">
-              <p className="bg-gray-500 h-8 w-8 p-2 rounded-full">
+              <p className="bg-gray-500 h-8 w-8  p-2 lg:h-14 lg:w-14 lg:p-3 rounded-full">
                 <FaInstagramSquare className="h-4 w-4 lg:h-8 lg:w-8"/>
               </p>
-              <p className="bg-gray-500 h-8 w-8 p-2 rounded-full">
+              <p className="bg-gray-500 h-8 w-8 p-2 lg:h-14 lg:w-14 lg:p-3 rounded-full">
                 <FaFacebookSquare className="h-4 w-4 lg:h-8 lg:w-8"/>
               </p>
-              <p className="bg-gray-500 h-8 w-8 p-2 rounded-full">
+              <p className="bg-gray-500 h-8 w-8 p-2 lg:h-14 lg:w-14 lg:p-3 rounded-full">
                 <FaXTwitter className="h-4 w-4 lg:h-8 lg:w-8"/>
               </p>
             </div>
