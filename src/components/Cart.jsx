@@ -32,16 +32,16 @@ const Cart = ({ carts, setCarts }) => {
             {carts.map((cart, index) => (
               <div key={index} className="flex items-center justify-between bg-[#F9FAFC] p-5 mb-5">
                 <div className="flex items-center gap-3">
-                  <div className=" border border-gray-300 rounded-full h-16 w-16 p-4 bg-white">
-                    <img className="h-8 w-8" src={cart.icon} alt="" />
+                  <div className=" border border-gray-300 rounded-full lg:h-16 lg:w-16 p-4 bg-white">
+                    <img className="h-6 w-6 lg:h-8 lg:w-8" src={cart.icon} alt="" />
                   </div>
                   <div>
-                    <h3 className="font-bold">{cart.name}</h3>
-                    <p>${cart.price}</p>
+                    <h3 className="font-bold text-[11px] lg:text-2xl">{cart.name}</h3>
+                    <p className="font-bold text-sm lg:text-2xl">${cart.price}</p>
                   </div>
                 </div>
 
-                <p onClick={()=>handleDelete(cart)} className="text-red-500 font-bold btn rounded-full text-lg">
+                <p onClick={()=>handleDelete(cart)} className="text-red-500 font-bold btn rounded-full text-sm lg:text-lg">
                   remove
                 </p>
               </div>
