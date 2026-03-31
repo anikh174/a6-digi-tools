@@ -35,10 +35,13 @@ const TransparentPricing = () => {
             <button className="btn w-full rounded-full bg-linear-to-l from-[#9514FA] to-[#4F39F6] mt-18 font text-white">Get Started Free</button>
           </div>
 
-            <div className="bg-linear-to-l from-[#9514FA] to-[#4F39F6] space-y-4 border-2 border-[#F1F1F1] p-5 rounded-2xl">
+            <div className="relative bg-linear-to-l from-[#9514FA] to-[#4F39F6] space-y-4 border-2 border-[#F1F1F1] p-5 rounded-2xl">
             <div>
               <h5 className="font-bold text-2xl text-white">Pro</h5>
               <p className="text-sm font-bold text-gray-100">Best for professionals</p>
+              <div className="absolute -top-4 left-25 lg:left-30">
+                <p className="text-[#BB4D00] bg-[#FEF3C6] px-3 py-1 rounded-full font-bold">Most Popular</p>
+              </div>
             </div>
 
             <div>
