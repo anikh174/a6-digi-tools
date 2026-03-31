@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import PremiumDigi from "./components/PremiumDigi";
 import Products from "./components/Products";
 import UserPremiumRating from "./components/UserPremiumRating";
+import GetStart from "./components/GetStart";
+import TransparentPricing from "./components/TransparentPricing";
 
 const getProducts = async () => {
   const res = await fetch("/data.json");
@@ -27,6 +29,8 @@ function App() {
       <PremiumDigi activeTab={activeTab} setActiveTab={setActiveTab} carts={carts}></PremiumDigi>
       {activeTab === "Products" && <Products productsPromise={productsPromise} carts={carts} setCarts={setCarts}></Products>}
       {activeTab === "Cart" && <Cart carts={carts} setCarts={setCarts}></Cart>}
+      <GetStart></GetStart>
+      <TransparentPricing></TransparentPricing>
     </>
   );
 }
